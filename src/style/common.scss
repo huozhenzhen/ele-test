@@ -1,0 +1,109 @@
+body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4,h5, h6, i, b, textarea, button, input, select, figure, figcaption {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    color: #666;
+    box-sizing: border-box;
+    font-weight: lighter;
+    font-family: Arial,'Hiragino Sans GB',Microsoft Yahei,Helvetica Neue,Helvetica,sans-serif !important;
+    -webkit-tap-highlight-color:transparent;
+    -webkit-font-smoothing: antialiased;
+    &:focus {
+        outline: none;
+    }
+}
+
+input[type="button"], input[type="submit"], input[type="search"], input[type="reset"] {
+    -webkit-appearance: none;
+}
+
+textarea { -webkit-appearance: none;}   
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
+
+
+
+.back_img{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.margin{
+    margin: 0 auto;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.scroll{
+  overflow-y:auto; 
+  -webkit-overflow-scrolling:touch;
+}
+
+/* 布局继承专用 */
+
+.flex-row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.flex-column {
+    @extend .flex-row;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+.flex-item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+.flex-vertical-middle {
+    /* 09版 */
+    -webkit-box-align: center;
+    /* 12版 */
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+
+
+.button_base {
+    font-size: 0.8rem;
+    color: #fff;
+    background-color: #4cd964;
+    text-align: center;
+    padding: 0.4rem 0;
+    margin: 0.4rem;
+    border-radius: 6px;
+    font-weight: 700;
+}

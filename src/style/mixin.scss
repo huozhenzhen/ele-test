@@ -1,0 +1,6 @@
+@import './variable';
+
+@mixin wh ($width, $height) {
+	width:$width;	
+	height: $height;
+}
